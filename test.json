@@ -1,0 +1,22 @@
+[{
+    "name": "Jeeshan Khan",
+    "email": "jeeshan@example.com",
+    "phone": "9876543210",
+    "password": "securePassword123"
+  }
+
+,
+
+{
+    "email": "jeeshan@example.com",
+    "password": "securePassword123"
+},
+{
+    "title": "Yoga Class",
+    "description": "Morning yoga session in the park",
+    "location": "Central Park",
+    "dateTime": "2025-05-20T07:00:00.000Z"
+  }
+
+
+  ]
