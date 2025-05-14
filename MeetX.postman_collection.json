@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "b85bb2aa-4b0f-4745-9e02-7ca1454fb034",
+		"name": "MeetX",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20074469",
+		"_collection_link": "https://speeding-astronaut-504618.postman.co/workspace/New-Team-Workspace~40bd7a2e-06b7-4447-96f8-764e4651ebb9/collection/20074469-b85bb2aa-4b0f-4745-9e02-7ca1454fb034?action=share&source=collection_link&creator=20074469"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Jeeshan Khan\",\n  \"email\": \"jeeshan@example.com\",\n  \"phone\": \"9876543210\",\n  \"password\": \"securePassword123\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8500/api/v1/users/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8500",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"jeeshan@example.com\",\n  \"password\": \"securePassword123\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8500/api/v1/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8500",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Getme",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8500/api/v1/users/getme",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8500",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"getme"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"jeeshan@example.com\",\n  \"password\": \"securePassword123\"\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8500/api/v1/users/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8500",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Activti-create",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Yoga Class\",\n  \"description\": \"Morning yoga session in the park\",\n  \"location\": \"Central Park\",\n  \"dateTime\": \"2025-05-20T07:00:00.000Z\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8500/api/v1/activity/create-activity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8500",
+					"path": [
+						"api",
+						"v1",
+						"activity",
+						"create-activity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "boking-id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"success\": true,\n  \"statusCode\": 201,\n  \"message\": \"Activity booked successfully\",\n  \"data\": {\n    \"_id\": \"664023ba5e12a1f9a1c67890\",\n    \"user\": \"663bc12345e12a1f9a1c1234\",\n    \"activity\": \"66401ab45e12a1f9a1c34567\",\n    \"bookedAt\": \"2025-05-14T12:00:00.000Z\"\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8500/api/v1/booking/682468fde62920e7e16d82e9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8500",
+					"path": [
+						"api",
+						"v1",
+						"booking",
+						"682468fde62920e7e16d82e9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-booking",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8500/api/v1/booking/682468fde62920e7e16d82e9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8500",
+					"path": [
+						"api",
+						"v1",
+						"booking",
+						"682468fde62920e7e16d82e9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
